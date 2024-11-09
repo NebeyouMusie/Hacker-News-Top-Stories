@@ -1,4 +1,4 @@
-# Welcome to your GPT Engineer project
+# Hacker News Top Stories
 
 ## Project info
 
