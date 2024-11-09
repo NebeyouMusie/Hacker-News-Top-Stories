@@ -15,16 +15,16 @@ const StoryCard = ({ title, url, points, author, createdAt }: StoryCardProps) =>
   });
 
   return (
-    <div className="story-card bg-white rounded-lg p-6 shadow-sm">
+    <div className="story-card bg-card rounded-lg p-6 shadow-sm border border-border">
       <div className="flex items-start gap-4">
         <div className="flex flex-col items-center min-w-[60px]">
           <ArrowUpCircle className="h-6 w-6 text-hn-orange mb-1" />
-          <span className="font-semibold text-gray-700">{points}</span>
+          <span className="font-semibold text-foreground">{points}</span>
         </div>
         <div className="flex-1">
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">{title}</h2>
+          <h2 className="text-xl font-semibold text-foreground mb-2">{title}</h2>
           <div className="flex items-center justify-between">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-muted-foreground">
               By {author} • {formattedDate}
             </p>
             <a
